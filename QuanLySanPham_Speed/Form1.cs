@@ -353,7 +353,7 @@ namespace QuanLySanPham_Speed
             }
             else if (status == "0")
             {
-                MessageBox.Show("Sản phẩm này có trong giỏ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Sản phẩm này đã có trong giỏ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
