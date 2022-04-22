@@ -445,8 +445,7 @@ namespace QuanLySanPham_Speed
                     i++;
                     try
                     {
-                        FirebaseResponse response21 = await client.DeleteAsync("QuanLyGioHang/" + i);
-                        //MessageBox.Show("Đã xóa hết thành công !!! ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        FirebaseResponse response21 = await client.DeleteAsync("QuanLyGioHang/" + i);                    
                     }
                     catch (Exception ex)
                     {
