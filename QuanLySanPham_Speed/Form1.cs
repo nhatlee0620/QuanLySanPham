@@ -31,7 +31,7 @@ namespace QuanLySanPham_Speed
 
         public bool CheckSoLuong(string soluong)
         {
-            return Regex.IsMatch(soluong, "^[0-9]{1,3}$");
+            return Regex.IsMatch(soluong, "^[0-9]{1,2}$");
         }
         public Form1()
         {
@@ -45,7 +45,7 @@ namespace QuanLySanPham_Speed
                 client = new FireSharp.FirebaseClient(config);
                 load();
                 load2();
-                //btnSua.Enabled = false;
+                btnSua.Enabled = false;
                 //BindingListSP();
             }
             catch
@@ -250,7 +250,7 @@ namespace QuanLySanPham_Speed
             }
             else if(!CheckSoLuong(txtSL.Text))
             {
-                MessageBox.Show("Vui lòng nhập số lượng sản phẩm đúng quy định (0-999)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập số lượng sản phẩm đúng quy định (0-99)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (txtTSP.Text == "")
             {
@@ -300,7 +300,7 @@ namespace QuanLySanPham_Speed
             }
             else if (!CheckSoLuong(txtSL.Text))
             {
-                MessageBox.Show("Vui lòng nhập số lượng sản phẩm đúng quy định (0-999)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Vui lòng nhập số lượng sản phẩm đúng quy định (0-99)", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (txtSL.Text == "")
             {
