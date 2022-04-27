@@ -45,6 +45,7 @@ namespace QuanLySanPham_Speed
                 client = new FireSharp.FirebaseClient(config);
                 load();
                 load2();
+                //btnSua.Enabled = false;
                 //BindingListSP();
             }
             catch
@@ -208,6 +209,7 @@ namespace QuanLySanPham_Speed
                 return;
             }
             btnThem.Enabled = false;
+            btnSua.Enabled = true;
             txtMSP.Enabled = false;
             DataGridViewRow row = dtgSanPham.Rows[e.RowIndex];
             string maSP = row.Cells[0].Value.ToString();
@@ -487,6 +489,7 @@ namespace QuanLySanPham_Speed
         {
             Reset();
             txtMSP.Enabled = true;
+            btnSua.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
