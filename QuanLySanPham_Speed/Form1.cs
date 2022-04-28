@@ -27,6 +27,12 @@ namespace QuanLySanPham_Speed
             BasePath = "https://quanlysanpham2-e7a54-default-rtdb.asia-southeast1.firebasedatabase.app/"
         };
 
+        //IFirebaseConfig config = new FirebaseConfig
+        //{
+        //    AuthSecret = "52eeKBiVG9Cs3Jbu0KHLEtSlMLtoxZPrpE3PQ4lP",
+        //    BasePath = "https://quanlysanpham-9c9e6-default-rtdb.asia-southeast1.firebasedatabase.app/"
+        //};
+
         IFirebaseClient client;
 
         public bool CheckSoLuong(string soluong)
