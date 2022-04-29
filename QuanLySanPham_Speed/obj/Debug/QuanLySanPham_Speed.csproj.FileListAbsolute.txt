@@ -27,3 +27,9 @@ E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\obj\Debug\QuanLySa
 E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\obj\Debug\QuanLySanPham_Speed.csproj.CopyComplete
 E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\obj\Debug\QuanLySanPham_Speed.exe
 E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\obj\Debug\QuanLySanPham_Speed.pdb
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\EPPlus.dll
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\EPPlus.Interfaces.dll
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\EPPlus.System.Drawing.dll
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\EPPlus.xml
+E:\18DT3\Hoc_Firebase\QuanLySanPham_Speed\QuanLySanPham_Speed\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
