@@ -131,7 +131,7 @@ namespace QuanLySanPham_Speed
             dtgSanPham.Columns[2].HeaderText = "Số Lượng Hàng Còn Trong Kho";
             dtgSanPham.Columns[3].HeaderText = "Vị Trí";
             dtgSanPham.Columns[4].HeaderText = "Status";            
-            dtgSanPham.Columns[0].Width = 100;
+            dtgSanPham.Columns[0].Width = 130;
             dtgSanPham.Columns[1].Width = 170;
             dtgSanPham.Columns[2].Width = 200;
             dtgSanPham.Columns[3].Width = 100;
