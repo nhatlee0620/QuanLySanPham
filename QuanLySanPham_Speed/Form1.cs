@@ -576,6 +576,18 @@ namespace QuanLySanPham_Speed
             CreateNewGioHang();
         }
 
-       
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rt = MessageBox.Show("Bạn muốn thoát?", "Thoát"
+                                , MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(rt == DialogResult.Yes)
+            {
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
