@@ -156,9 +156,9 @@ namespace QuanLySanPham_Speed
             dtgGioHang.Columns[2].HeaderText = "Số Lượng Muốn Lấy";
             dtgGioHang.Columns[3].HeaderText = "Vị Trí";
             dtgGioHang.Columns[0].Width = 100;
-            dtgGioHang.Columns[1].Width = 170;
-            dtgGioHang.Columns[2].Width = 170;
-            dtgGioHang.Columns[3].Width = 100;
+            dtgGioHang.Columns[1].Width = 140;
+            dtgGioHang.Columns[2].Width = 150;
+            dtgGioHang.Columns[3].Width = 150;
 
             RetriveGioHang();
             Total2();
