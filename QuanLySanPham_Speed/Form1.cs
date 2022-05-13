@@ -134,7 +134,7 @@ namespace QuanLySanPham_Speed
             dtgSanPham.Columns[0].Width = 130;
             dtgSanPham.Columns[1].Width = 170;
             dtgSanPham.Columns[2].Width = 200;
-            dtgSanPham.Columns[3].Width = 100;
+            dtgSanPham.Columns[3].Width = 130;
 
             RetriveSP();
             ToTal();
@@ -155,7 +155,7 @@ namespace QuanLySanPham_Speed
             dtgGioHang.Columns[1].HeaderText = "Tên Sản Phẩm";
             dtgGioHang.Columns[2].HeaderText = "Số Lượng Muốn Lấy";
             dtgGioHang.Columns[3].HeaderText = "Vị Trí";
-            dtgGioHang.Columns[0].Width = 100;
+            dtgGioHang.Columns[0].Width = 90;
             dtgGioHang.Columns[1].Width = 140;
             dtgGioHang.Columns[2].Width = 150;
             dtgGioHang.Columns[3].Width = 150;
@@ -222,7 +222,7 @@ namespace QuanLySanPham_Speed
             string tenSP = row.Cells[1].Value.ToString();
             string soLuong = row.Cells[2].Value.ToString();
             string viTri = row.Cells[3].Value.ToString();
-            string status = row.Cells[4].Value.ToString();
+            string status = row.Cells[4].Value.ToString();      
 
             txtMSP.Text = maSP;
             txtTSP.Text = tenSP;
@@ -357,11 +357,12 @@ namespace QuanLySanPham_Speed
             if (!CheckSoLuong(txtSoLuongLay.Text)||txtSoLuongLay.Text == "" || Convert.ToInt32(txtSoLuongLay.Text) > soluong || soluong.ToString() == "0" || txtSoLuongLay.Text == "0")
             {
                 MessageBox.Show("Hàng trong kho không đáp ứng được!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtSoLuongLay.Focus();
+                txtSoLuongLay.Clear();
             }
             else if (status == "0")
             {
                 MessageBox.Show("Sản phẩm này đã có trong giỏ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtSoLuongLay.Clear();
             }
             else
             {
