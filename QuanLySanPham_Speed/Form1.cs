@@ -89,14 +89,14 @@ namespace QuanLySanPham_Speed
 
             while (true)
             {
-                if (i == cnt2)
+                if ((i-1) == (cnt2-1))
                 {
                     break;
                 }
                 i++;
                 try
                 {
-                    FirebaseResponse response22 = await client.GetAsync("QuanLyGioHang/" + i);
+                    FirebaseResponse response22 = await client.GetAsync("QuanLyGioHang/" + (i-1));
                     Data2 obj22 = response22.ResultAs<Data2>();
 
                     DataRow row = dt2.NewRow();
@@ -379,10 +379,11 @@ namespace QuanLySanPham_Speed
                     var obj2 = new Count2
                     {
                         cnt2 = (Convert.ToInt32(get.cnt2) + 1).ToString(),
+                        //cnt2 = (Convert.ToInt32(get.cnt2).ToString())
                     };
                     SetResponse response24 = await client.SetAsync("Count2", obj2);
                     //Đẩy dữ liệu lên Firebase
-                    SetResponse response22 = await client.SetAsync("QuanLyGioHang/" + obj2.cnt2, data);
+                    SetResponse response22 = await client.SetAsync("QuanLyGioHang/" + (Convert.ToInt32(obj2.cnt2)-1).ToString(), data);
                     Data2 result2 = response22.ResultAs<Data2>();
                     int soluonglay = int.Parse(result2.SoLuongMuonLay);
 
